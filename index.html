@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+</head>
+<style>
+    div,
+    select {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 66px;
+        text-align: center;
+        color: white
+    }
+
+    video {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    .content {
+        position: absolute;
+        top: 25%;
+        left:20%;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        padding: 20px;
+        font-size: 30px;
+        font-weight: 500;    }
+</style>
+
+<body>
+
+    <h1>Weather App</h1>
+<div id="videoDiv">
+        <video id="bgVideo" autoplay="true" loop="true">
+        </video>
+
+</div>
+    
+    </video>
+    <div class="content container ">
+        <div>
+            Select your City
+            <select id="city">
+                <option>Vadodara</option>
+                <option>Surat</option>
+                <option>Mumbai</option>
+                <option>Chennai</option>
+                <option>Pune</option>
+                <option>Jaipur</option>
+                <option>London</option>
+           
+            </select>
+
+        </div>
+
+
+        <div>Desciption : <span id="description"></span> 
+        <img id="imgg" src=""></img></div>
+
+        <div>Temperature : <span id="temp">25</span> ° </div>
+
+        <div>Humidity : <span id="humidity">25</span> % </div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
